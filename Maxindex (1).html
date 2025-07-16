@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maxim Buchinskiy | Clinical Psychologist</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-800">
+    <header class="p-4 shadow flex justify-between items-center bg-white">
+        <h1 class="text-xl font-bold text-blue-700">Maxim Buchinskiy</h1>
+        <div class="space-x-2">
+            <button onclick="changeLanguage('en')" class="language-switcher">EN</button>
+            <button onclick="changeLanguage('ua')" class="language-switcher">UA</button>
+            <button onclick="changeLanguage('ru')" class="language-switcher">RU</button>
+        </div>
+    </header>
+
+    <main class="p-8">
+        <section id="hero" class="text-center mb-12">
+            <h2 class="text-3xl font-semibold text-blue-600" data-lang="en">Clinical psychologist. 10+ years of experience. EMDR & ImTT specialist.</h2>
+            <h2 class="text-3xl font-semibold text-blue-600 hidden" data-lang="ua">Клінічний психолог. 10+ років досвіду. Спеціаліст з EMDR та ImTT.</h2>
+            <h2 class="text-3xl font-semibold text-blue-600 hidden" data-lang="ru">Клинический психолог. Более 10 лет опыта. Специалист EMDR и ImTT.</h2>
+            <a href="https://t.me/example" class="mt-4 inline-block bg-blue-600 text-white px-6 py-2 rounded">Записаться на консультацию</a>
+        </section>
+
+        <section id="about" class="mb-12">
+            <h3 class="text-2xl text-blue-500 mb-4" data-lang="en">About Me</h3>
+            <h3 class="text-2xl text-blue-500 mb-4 hidden" data-lang="ua">Про мене</h3>
+            <h3 class="text-2xl text-blue-500 mb-4 hidden" data-lang="ru">Обо мне</h3>
+            <p data-lang="en">I am a clinical psychologist with over 10 years of experience. I work with trauma, anxiety, and psychosomatic symptoms using EMDR and ImTT therapy.</p>
+            <p class="hidden" data-lang="ua">Я — клінічний психолог з понад 10-річним досвідом. Працюю з травмами, тривожністю та психосоматикою за методиками EMDR та ImTT.</p>
+            <p class="hidden" data-lang="ru">Я — клинический психолог с более чем 10-летним стажем. Работаю с травмами, тревожностью и психосоматикой с использованием EMDR и ImTT.</p>
+        </section>
+
+        <section id="contact" class="mb-12">
+            <h3 class="text-2xl text-blue-500 mb-4" data-lang="en">Contact</h3>
+            <h3 class="text-2xl text-blue-500 mb-4 hidden" data-lang="ua">Контакти</h3>
+            <h3 class="text-2xl text-blue-500 mb-4 hidden" data-lang="ru">Контакты</h3>
+            <ul>
+                <li>Telegram: <a href="https://t.me/example" class="text-blue-600">@MaxPsych</a></li>
+                <li>Instagram: <a href="https://instagram.com/example" class="text-blue-600">@max.buchinskiy</a></li>
+            </ul>
+        </section>
+
+        <section id="form" class="mb-12">
+            <h3 class="text-2xl text-blue-500 mb-4" data-lang="en">Book a Session</h3>
+            <h3 class="text-2xl text-blue-500 mb-4 hidden" data-lang="ua">Записатися</h3>
+            <h3 class="text-2xl text-blue-500 mb-4 hidden" data-lang="ru">Записаться</h3>
+            <form class="space-y-4 max-w-md mx-auto">
+                <input type="text" placeholder="Name" class="w-full border p-2 rounded">
+                <input type="tel" placeholder="Phone Number" class="w-full border p-2 rounded">
+                <textarea placeholder="Comment" class="w-full border p-2 rounded"></textarea>
+                <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded">Send Request</button>
+            </form>
+        </section>
+    
+        <section id="methods" class="mb-12">
+            <h3 class="text-2xl text-blue-500 mb-4" data-lang="en">Methods I Use</h3>
+            <h3 class="text-2xl text-blue-500 mb-4 hidden" data-lang="ua">Методи, які я використовую</h3>
+            <h3 class="text-2xl text-blue-500 mb-4 hidden" data-lang="ru">Методы, которые я использую</h3>
+            <ul class="list-disc pl-6 space-y-2">
+                <li data-lang="en">EMDR (Eye Movement Desensitization and Reprocessing)</li>
+                <li data-lang="ua" class="hidden">EMDR (десенсибілізація та репроцесінг рухами очей)</li>
+                <li data-lang="ru" class="hidden">EMDR (десенсибилизация и переработка движениями глаз)</li>
+
+                <li data-lang="en">ImTT (Image Transformation Therapy)</li>
+                <li data-lang="ua" class="hidden">ImTT (терапія трансформації образів)</li>
+                <li data-lang="ru" class="hidden">ImTT (терапия трансформации образов)</li>
+
+                <li data-lang="en">Personalized, compassionate approach</li>
+                <li data-lang="ua" class="hidden">Індивідуальний, чуйний підхід</li>
+                <li data-lang="ru" class="hidden">Индивидуальный, бережный подход</li>
+            </ul>
+        </section>
+
+        <section id="reviews" class="mb-12">
+            <h3 class="text-2xl text-blue-500 mb-4" data-lang="en">What Clients Say</h3>
+            <h3 class="text-2xl text-blue-500 mb-4 hidden" data-lang="ua">Що кажуть клієнти</h3>
+            <h3 class="text-2xl text-blue-500 mb-4 hidden" data-lang="ru">Отзывы клиентов</h3>
+            <div class="space-y-4">
+                <blockquote class="border-l-4 border-blue-300 pl-4 italic text-gray-600" data-lang="en">
+                    “I noticed a shift already after the first session. Maxim's calm presence helped me feel safe.”
+                </blockquote>
+                <blockquote class="border-l-4 border-blue-300 pl-4 italic text-gray-600 hidden" data-lang="ua">
+                    “Я помітив зміни вже після першої сесії. Спокійна присутність Максима дала мені відчуття безпеки.”
+                </blockquote>
+                <blockquote class="border-l-4 border-blue-300 pl-4 italic text-gray-600 hidden" data-lang="ru">
+                    “Я почув(а) изменения уже после первой сессии. Спокойствие Максима дало чувство безопасности.”
+                </blockquote>
+            </div>
+        </section>
+
+        <section id="certificates" class="mb-12">
+            <h3 class="text-2xl text-blue-500 mb-4" data-lang="en">Certificates</h3>
+            <h3 class="text-2xl text-blue-500 mb-4 hidden" data-lang="ua">Сертифікати</h3>
+            <h3 class="text-2xl text-blue-500 mb-4 hidden" data-lang="ru">Сертификаты</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <img src="https://via.placeholder.com/400x300?text=Certificate+1" alt="Certificate 1" class="rounded shadow">
+                <img src="https://via.placeholder.com/400x300?text=Certificate+2" alt="Certificate 2" class="rounded shadow">
+            </div>
+        </section>
+
+        <section id="faq" class="mb-12">
+            <h3 class="text-2xl text-blue-500 mb-4" data-lang="en">Interactive: Ask Yourself</h3>
+            <h3 class="text-2xl text-blue-500 mb-4 hidden" data-lang="ua">Інтерактив: запитай себе</h3>
+            <h3 class="text-2xl text-blue-500 mb-4 hidden" data-lang="ru">Интерактив: спроси себя</h3>
+            <div class="space-y-4">
+                <button onclick="alert('Notice how you feel right now. What emotion is most present?')" class="block w-full text-left p-4 border rounded bg-blue-50 hover:bg-blue-100">
+                    <span data-lang="en">What am I feeling right now?</span>
+                    <span class="hidden" data-lang="ua">Що я зараз відчуваю?</span>
+                    <span class="hidden" data-lang="ru">Что я сейчас чувствую?</span>
+                </button>
+                <button onclick="alert('Ask yourself: What do I need today to feel supported?')" class="block w-full text-left p-4 border rounded bg-blue-50 hover:bg-blue-100">
+                    <span data-lang="en">What do I need today?</span>
+                    <span class="hidden" data-lang="ua">Що мені потрібно сьогодні?</span>
+                    <span class="hidden" data-lang="ru">Что мне нужно сегодня?</span>
+                </button>
+            </div>
+        </section>
+
+</main>
+
+    <script>
+        function changeLanguage(lang) {
+            document.querySelectorAll('[data-lang]').forEach(el => {
+                el.classList.add('hidden');
+            });
+            document.querySelectorAll(`[data-lang="${lang}"]`).forEach(el => {
+                el.classList.remove('hidden');
+            });
+        }
+        changeLanguage('ru'); // default language
+    </script>
+</body>
+</html>
