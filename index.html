@@ -595,48 +595,93 @@
 </script>
 <script>
 const translations = {
-    en: {
-        "contact-title": "Contact Me",
-        "faq-title": "FAQ"
-    },
-    ru: {
-        "contact-title": "Свяжитесь со мной",
-        "faq-title": "Часто задаваемые вопросы"
-    },
-    ua: {
-        "contact-title": "Зв'яжіться зі мною",
-        "faq-title": "Поширені запитання"
-    }
+  ua: {
+    "certificates-title": "Сертифікати",
+    "certificate-1-title": "Сертифікат EMDR",
+    "certificate-2-title": "Навчання ImTT",
+    "certificate-3-title": "Диплом психолога",
+    "faq-title": "Поширені запитання",
+    "faq-q1": "Скільки сеансів мені знадобиться?",
+    "faq-a1": "Кількість сеансів залежить від ваших конкретних проблем і цілей. Багато клієнтів помічають покращення вже через 6-12 сеансів, тоді як складна травма може вимагати більш тривалої роботи.",
+    "faq-q2": "Чи ефективна онлайн-терапія?",
+    "faq-a2": "Дослідження показують, що онлайн-терапія може бути такою ж ефективною, як і очні сесії. Найважливішими факторами є ваш комфорт та приватний простір.",
+    "faq-q3": "Яка у вас політика скасування?",
+    "faq-a3": "Я прошу повідомляти про скасування за 24 години. Пізні скасування оплачуються у розмірі 50%, крім надзвичайних ситуацій.",
+    "faq-q4": "Як зрозуміти, чи підходить мені EMDR?",
+    "faq-a4": "EMDR особливо ефективний при травмах, ПТСР, тривозі. Якщо метод вам не підійде — ми знайдемо інші рішення.",
+    "test-title": "Чи потрібна мені терапія?",
+    "test-result-title": "Ваші результати",
+    "contact-title": "Зв'яжіться зі мною",
+    "contact-subtitle": "Контактна інформація"
+  },
+  ru: {
+    "certificates-title": "Сертификаты",
+    "certificate-1-title": "Сертификат EMDR",
+    "certificate-2-title": "Обучение ImTT",
+    "certificate-3-title": "Диплом психолога",
+    "faq-title": "Часто задаваемые вопросы",
+    "faq-q1": "Сколько сеансов мне понадобится?",
+    "faq-a1": "Количество сеансов зависит от ваших целей. Улучшения могут быть уже после 6–12 сессий, но травмы требуют больше времени.",
+    "faq-q2": "Эффективна ли онлайн-терапия?",
+    "faq-a2": "Да, она может быть такой же эффективной. Главное — ваше спокойствие и личное пространство.",
+    "faq-q3": "Какая у вас политика отмены?",
+    "faq-a3": "Предупреждайте за 24 часа. Поздняя отмена оплачивается 50%, кроме экстренных случаев.",
+    "faq-q4": "Как понять, подходит ли мне EMDR?",
+    "faq-a4": "EMDR работает при травмах, ПТСР, тревожности. Если метод вам не подойдёт — подберём альтернативу.",
+    "test-title": "Нужна ли мне терапия?",
+    "test-result-title": "Ваш результат",
+    "contact-title": "Свяжитесь со мной",
+    "contact-subtitle": "Контактная информация"
+  },
+  en: {
+    "certificates-title": "Certificates",
+    "certificate-1-title": "EMDR Certificate",
+    "certificate-2-title": "ImTT Training",
+    "certificate-3-title": "Psychologist Degree",
+    "faq-title": "Frequently Asked Questions",
+    "faq-q1": "How many sessions will I need?",
+    "faq-a1": "It depends on your goals. Many feel better after 6–12 sessions, though trauma may need more time.",
+    "faq-q2": "Is online therapy effective?",
+    "faq-a2": "Yes. Studies show it can work just as well. Comfort and privacy are key.",
+    "faq-q3": "What is your cancellation policy?",
+    "faq-a3": "Please notify me 24h in advance. Late cancellations are charged 50%, except in emergencies.",
+    "faq-q4": "How do I know if EMDR is right for me?",
+    "faq-a4": "EMDR is great for trauma, PTSD, and anxiety. If not suitable, we’ll use another proven approach.",
+    "test-title": "Do I Need Therapy?",
+    "test-result-title": "Your Results",
+    "contact-title": "Contact Me",
+    "contact-subtitle": "Contact Information"
+  }
 };
 
 function translatePage(lang) {
-    const translation = translations[lang];
-    if (!translation) return;
+  const translation = translations[lang];
+  if (!translation) return;
 
-    for (const [id, text] of Object.entries(translation)) {
-        const element = document.getElementById(id);
-        if (element) {
-            element.textContent = text;
-        }
+  for (const [id, text] of Object.entries(translation)) {
+    const element = document.getElementById(id);
+    if (element) {
+      element.textContent = text;
     }
+  }
 
-    document.querySelectorAll('.language-switcher button').forEach(btn => {
-        btn.classList.remove('active');
-        if (btn.dataset.lang === lang) {
-            btn.classList.add('active');
-        }
-    });
+  document.querySelectorAll('.language-switcher button').forEach(btn => {
+    btn.classList.remove('active');
+    if (btn.dataset.lang === lang) {
+      btn.classList.add('active');
+    }
+  });
 }
 
 document.querySelectorAll('.language-switcher button').forEach(button => {
-    button.addEventListener('click', () => {
-        const selectedLang = button.getAttribute('data-lang');
-        translatePage(selectedLang);
-    });
+  button.addEventListener('click', () => {
+    const selectedLang = button.getAttribute('data-lang');
+    translatePage(selectedLang);
+  });
 });
 
 window.addEventListener('DOMContentLoaded', () => {
-    translatePage('ua');
+  translatePage('ua');
 });
 </script>
 </body>
