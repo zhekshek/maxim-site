@@ -773,7 +773,7 @@ function toggleFAQ(id) {
     const faqItem = document.querySelectorAll('#faq .border')[id - 1];
     if (!faqItem) return;
 
-    const answer = faqItem.querySelector('div.hidden');
+    const answer = faqItem.querySelector('.faq-answer');
     const icon = faqItem.querySelector('button i');
 
     if (answer) {
