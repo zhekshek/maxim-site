@@ -768,15 +768,29 @@
             }
         }
 
-        // FAQ
-        function toggleFAQ(id) {
-            const answer = document.querySelectorAll('.faq-item')[id-1].querySelector('.faq-answer');
-            const icon = document.querySelectorAll('.faq-item')[id-1].querySelector('i');
-            
-            answer.classList.toggle('hidden');
-            icon.classList.toggle('rotate-180');
-        }
+// FAQ: обработка клика по кнопке вопроса
+function toggleFAQ(id) {
+    const faqItem = document.querySelectorAll('#faq .border')[id - 1];
+    if (!faqItem) return;
 
+    const answer = faqItem.querySelector('div.hidden');
+    const icon = faqItem.querySelector('button i');
+
+    if (answer) {
+        answer.classList.toggle('hidden');
+    }
+    if (icon) {
+        icon.classList.toggle('rotate-180');
+    }
+}
+
+// Навешиваем обработчики на все кнопки FAQ после загрузки DOM
+document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('#faq button').forEach((btn, index) => {
+        btn.addEventListener('click', () => toggleFAQ(index + 1));
+    });
+});
+        
         // Модальное окно для сертификатов
         function openModal(src) {
             document.getElementById('modal-image').src = src;
