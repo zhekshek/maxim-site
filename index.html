@@ -477,46 +477,52 @@
             <div class="space-y-4">
                 <!-- Вопрос 1 -->
                 <div class="border border-gray-200 rounded-lg overflow-hidden">
-                    <button 
-                        class="w-full flex justify-between items-center p-6 text-left hover:bg-gray-100 transition"
-                        onclick="toggleFAQ(1)"
-                    >
-                        <span class="text-lg font-medium text-gray-800" data-lang="ru">Сколько сеансов мне понадобится?</span>
-                        <span class="text-lg font-medium text-gray-800 hidden" data-lang="en">How many sessions will I need?</span>
-                        <span class="text-lg font-medium text-gray-800 hidden" data-lang="ua">Скільки сеансів мені знадобиться?</span>
-                        <i class="fas fa-chevron-down text-blue-500 transition-transform duration-300"></i>
-                    </button>
-                    <div class="hidden px-6 pb-6 pt-2 bg-white">
-                        <p class="text-gray-600" data-lang="ru">
-                            Количество сеансов зависит от вашего запроса. В среднем:
-                            <ul class="list-disc pl-5 mt-2 space-y-1">
-                                <li>Тревожность: 5-10 сеансов</li>
-                                <li>Травма: 10-15 сеансов</li>
-                                <li>Психосоматика: 8-12 сеансов</li>
-                            </ul>
-                            Точный план составляется на первой консультации.
-                        </p>
-                        <p class="text-gray-600 hidden" data-lang="en">
-                            The number of sessions depends on your needs. Typically:
-                            <ul class="list-disc pl-5 mt-2 space-y-1">
-                                <li>Anxiety: 5-10 sessions</li>
-                                <li>Trauma: 10-15 sessions</li>
-                                <li>Psychosomatics: 8-12 sessions</li>
-                            </ul>
-                            A precise plan is determined during the first consultation.
-                        </p>
-                        <p class="text-gray-600 hidden" data-lang="ua">
-                            Кількість сеансів залежить від вашого запиту. В середньому:
-                            <ul class="list-disc pl-5 mt-2 space-y-1">
-                                <li>Тривожність: 5-10 сеансів</li>
-                                <li>Травма: 10-15 сеансів</li>
-                                <li>Психосоматика: 8-12 сеансів</li>
-                            </ul>
-                            Точний план складається на першій консультації.
-                        </p>
-                    </div>
-                </div>
+  <button 
+    class="w-full flex justify-between items-center p-6 text-left hover:bg-gray-100 transition"
+    onclick="toggleFAQ(1)"
+  >
+    <span class="text-lg font-medium text-gray-800" data-lang="ru">Сколько сеансов мне понадобится?</span>
+    <span class="text-lg font-medium text-gray-800 hidden" data-lang="en">How many sessions will I need?</span>
+    <span class="text-lg font-medium text-gray-800 hidden" data-lang="ua">Скільки сеансів мені знадобиться?</span>
+    <i class="fas fa-chevron-down text-blue-500 transition-transform duration-300"></i>
+  </button>
 
+  <div class="hidden px-6 pb-6 pt-2 bg-white">
+    <!-- RU -->
+    <div data-lang="ru" class="text-gray-600">
+      <p>Количество сеансов зависит от вашего запроса. В среднем:</p>
+      <ul class="list-disc pl-5 mt-2 space-y-1">
+        <li>Тревожность: 5-10 сеансов</li>
+        <li>Травма: 10-15 сеансов</li>
+        <li>Психосоматика: 8-12 сеансов</li>
+      </ul>
+      <p class="mt-2">Точный план составляется на первой консультации.</p>
+    </div>
+
+    <!-- EN -->
+    <div data-lang="en" class="text-gray-600 hidden">
+      <p>The number of sessions depends on your needs. Typically:</p>
+      <ul class="list-disc pl-5 mt-2 space-y-1">
+        <li>Anxiety: 5-10 sessions</li>
+        <li>Trauma: 10-15 sessions</li>
+        <li>Psychosomatics: 8-12 sessions</li>
+      </ul>
+      <p class="mt-2">A precise plan is determined during the first consultation.</p>
+    </div>
+
+    <!-- UA -->
+    <div data-lang="ua" class="text-gray-600 hidden">
+      <p>Кількість сеансів залежить від вашого запиту. В середньому:</p>
+      <ul class="list-disc pl-5 mt-2 space-y-1">
+        <li>Тривожність: 5-10 сеансів</li>
+        <li>Травма: 10-15 сеансів</li>
+        <li>Психосоматика: 8-12 сеансів</li>
+      </ul>
+      <p class="mt-2">Точний план складається на першій консультації.</p>
+    </div>
+  </div>
+                </div>
+                
                 <!-- Остальные вопросы по аналогии -->
                 <!-- Вопрос 2 -->
                 <div class="border border-gray-200 rounded-lg overflow-hidden">
