@@ -557,81 +557,124 @@
                     </div>
                 </div>
 
-                <!-- Вопрос 3 -->
-                <div class="border border-gray-200 rounded-lg overflow-hidden">
-                    <button 
-                        class="w-full flex justify-between items-center p-6 text-left hover:bg-gray-100 transition"
-                        onclick="toggleFAQ(3)"
-                    >
-                        <span class="text-lg font-medium text-gray-800" data-lang="ru">Каковы ваши правила отмены сеанса?</span>
-                        <span class="text-lg font-medium text-gray-800 hidden" data-lang="en">What is your cancellation policy?</span>
-                        <span class="text-lg font-medium text-gray-800 hidden" data-lang="ua">Які у вас правила скасування сеансу?</span>
-                        <i class="fas fa-chevron-down text-blue-500 transition-transform duration-300"></i>
-                    </button>
-                    <div class="hidden faq-answer px-6 pb-6 pt-2 bg-white">
-                        <p class="text-gray-600" data-lang="ru">
-                            Вы можете отменить или перенести сеанс бесплатно за 24 часа до начала. 
-                            <br><br>
-                            При отмене позднее этого срока взимается 50% стоимости сеанса (кроме экстренных ситуаций).
-                        </p>
-                        <p class="text-gray-600 hidden" data-lang="en">
-                            You can cancel or reschedule a session free of charge 24 hours in advance.
-                            <br><br>
-                            Late cancellations incur a 50% fee (except for emergencies).
-                        </p>
-                        <p class="text-gray-600 hidden" data-lang="ua">
-                            Ви можете скасувати або перенести сеанс безкоштовно за 24 години.
-                            <br><br>
-                            При пізньому скасуванні стягується 50% вартості (крім надзвичайних ситуацій).
-                        </p>
-                    </div>
-                </div>
+   <section id="faq" class="py-12 bg-gray-50">
+  <div class="max-w-4xl mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center mb-10 text-gray-800" data-lang="ru">Часто задаваемые вопросы</h2>
+    <h2 class="text-3xl font-bold text-center mb-10 text-gray-800 hidden" data-lang="en">Frequently Asked Questions</h2>
+    <h2 class="text-3xl font-bold text-center mb-10 text-gray-800 hidden" data-lang="ua">Поширені запитання</h2>
 
-                <!-- Вопрос 4 -->
-                <div class="border border-gray-200 rounded-lg overflow-hidden">
-                    <button 
-                        class="w-full flex justify-between items-center p-6 text-left hover:bg-gray-100 transition"
-                        onclick="toggleFAQ(4)"
-                    >
-                        <span class="text-lg font-medium text-gray-800" data-lang="ru">Как узнать, подходит ли мне метод EMDR?</span>
-                        <span class="text-lg font-medium text-gray-800 hidden" data-lang="en">How do I know if EMDR is right for me?</span>
-                        <span class="text-lg font-medium text-gray-800 hidden" data-lang="ua">Як дізнатися, чи підходить мені EMDR?</span>
-                        <i class="fas fa-chevron-down text-blue-500 transition-transform duration-300"></i>
-                    </button>
-                    <div class="hidden faq-answer px-6 pb-6 pt-2 bg-white">
-                        <p class="text-gray-600" data-lang="ru">
-                            EMDR особенно эффективен при:
-                            <ul class="list-disc pl-5 mt-2 space-y-1">
-                                <li>Посттравматическом стрессе (ПТСР)</li>
-                                <li>Тревожных расстройствах</li>
-                                <li>Фобиях</li>
-                            </ul>
-                            Противопоказания: эпилепсия, острый психоз. На первой консультации я проведу диагностику и дам рекомендации.
-                        </p>
-                        <p class="text-gray-600 hidden" data-lang="en">
-                            EMDR is particularly effective for:
-                            <ul class="list-disc pl-5 mt-2 space-y-1">
-                                <li>PTSD</li>
-                                <li>Anxiety disorders</li>
-                                <li>Phobias</li>
-                            </ul>
-                            Contraindications: epilepsy, acute psychosis. During the first session, I'll assess your suitability.
-                        </p>
-                        <p class="text-gray-600 hidden" data-lang="ua">
-                            EMDR особливо ефективний при:
-                            <ul class="list-disc pl-5 mt-2 space-y-1">
-                                <li>ПТСР</li>
-                                <li>Тривожних розладах</li>
-                                <li>Фобіях</li>
-                            </ul>
-                            Протипоказання: епілепсія, гострий психоз. На першій консультації я проведу діагностику.
-                        </p>
-                    </div>
-                </div>
-            </div>
+    <div class="space-y-4">
+      <!-- FAQ 1 -->
+      <div class="border border-gray-200 rounded-lg overflow-hidden">
+        <button class="w-full flex justify-between items-center p-6 text-left hover:bg-gray-100 transition"
+                aria-expanded="false" type="button">
+          <div class="flex-1">
+            <span data-lang="ru" class="text-lg font-medium text-gray-800">Сколько сеансов мне понадобится?</span>
+            <span data-lang="en" class="text-lg font-medium text-gray-800 hidden">How many sessions will I need?</span>
+            <span data-lang="ua" class="text-lg font-medium text-gray-800 hidden">Скільки сеансів мені знадобиться?</span>
+          </div>
+          <i class="fas fa-chevron-down text-blue-500 transition-transform duration-300"></i>
+        </button>
+
+        <div class="hidden faq-answer px-6 pb-6 pt-2 bg-white" aria-hidden="true">
+          <div data-lang="ru" class="text-gray-600">
+            Количество сеансов зависит от запроса. В среднем:
+            <ul class="list-disc pl-5 mt-2 space-y-1">
+              <li>Тревожность: 5–10 сеансов</li>
+              <li>Травма: 10–15 сеансов</li>
+              <li>Психосоматика: 8–12 сеансов</li>
+            </ul>
+            Точный план составляется на первой консультации.
+          </div>
+          <div data-lang="en" class="text-gray-600 hidden">
+            The number of sessions depends on your needs. Typically:
+            <ul class="list-disc pl-5 mt-2 space-y-1">
+              <li>Anxiety: 5–10 sessions</li>
+              <li>Trauma: 10–15 sessions</li>
+              <li>Psychosomatics: 8–12 sessions</li>
+            </ul>
+            A precise plan is determined during the first consultation.
+          </div>
+          <div data-lang="ua" class="text-gray-600 hidden">
+            Кількість сеансів залежить від вашого запиту. В середньому:
+            <ul class="list-disc pl-5 mt-2 space-y-1">
+              <li>Тривожність: 5–10 сеансів</li>
+              <li>Травма: 10–15 сеансів</li>
+              <li>Психосоматика: 8–12 сеансів</li>
+            </ul>
+            Точний план складається на першій консультації.
+          </div>
         </div>
-    </section>
+      </div>
 
+      <!-- FAQ 2 -->
+      <div class="border border-gray-200 rounded-lg overflow-hidden">
+        <button class="w-full flex justify-between items-center p-6 text-left hover:bg-gray-100 transition"
+                aria-expanded="false" type="button">
+          <div class="flex-1">
+            <span data-lang="ru" class="text-lg font-medium text-gray-800">Эффективна ли онлайн-терапия?</span>
+            <span data-lang="en" class="text-lg font-medium text-gray-800 hidden">Is online therapy effective?</span>
+            <span data-lang="ua" class="text-lg font-medium text-gray-800 hidden">Чи ефективна онлайн-терапія?</span>
+          </div>
+          <i class="fas fa-chevron-down text-blue-500 transition-transform duration-300"></i>
+        </button>
+
+        <div class="hidden faq-answer px-6 pb-6 pt-2 bg-white" aria-hidden="true">
+          <div data-lang="ru" class="text-gray-600">
+            Да — при соблюдении условий онлайн-терапия (включая EMDR и ImTT) даёт сопоставимые результаты с очными сессиями:
+            <ul class="list-disc pl-5 mt-2 space-y-1">
+              <li>Стабильное интернет-соединение</li>
+              <li>Уединённое пространство</li>
+              <li>Использование гарнитуры</li>
+            </ul>
+          </div>
+          <div data-lang="en" class="text-gray-600 hidden">
+            Yes — with proper conditions, online therapy (including EMDR and ImTT) delivers results comparable to in-person sessions:
+            <ul class="list-disc pl-5 mt-2 space-y-1">
+              <li>Stable internet connection</li>
+              <li>Private space</li>
+              <li>Use of headphones</li>
+            </ul>
+          </div>
+          <div data-lang="ua" class="text-gray-600 hidden">
+            Так — за дотримання умов онлайн-терапія (включаючи EMDR та ImTT) дає порівнянні результати з очними сесіями:
+            <ul class="list-disc pl-5 mt-2 space-y-1">
+              <li>Стабільний інтернет</li>
+              <li>Приватний простір</li>
+              <li>Використання гарнітури</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ 3 -->
+      <div class="border border-gray-200 rounded-lg overflow-hidden">
+        <button class="w-full flex justify-between items-center p-6 text-left hover:bg-gray-100 transition"
+                aria-expanded="false" type="button">
+          <div class="flex-1">
+            <span data-lang="ru" class="text-lg font-medium text-gray-800">Как узнать, подходит ли мне EMDR?</span>
+            <span data-lang="en" class="text-lg font-medium text-gray-800 hidden">How do I know if EMDR is right for me?</span>
+            <span data-lang="ua" class="text-lg font-medium text-gray-800 hidden">Як дізнатися, чи підходить мені EMDR?</span>
+          </div>
+          <i class="fas fa-chevron-down text-blue-500 transition-transform duration-300"></i>
+        </button>
+
+        <div class="hidden faq-answer px-6 pb-6 pt-2 bg-white" aria-hidden="true">
+          <div data-lang="ru" class="text-gray-600">
+            EMDR особенно эффективен при ПТСР, тревожных расстройствах и фобиях. Противопоказания: эпилепсия, острый психоз. На первой консультации провожу диагностику.
+          </div>
+          <div data-lang="en" class="text-gray-600 hidden">
+            EMDR is especially effective for PTSD, anxiety disorders and phobias. Contraindications: epilepsy, acute psychosis. Suitability is assessed during the first consultation.
+          </div>
+          <div data-lang="ua" class="text-gray-600 hidden">
+            EMDR особливо ефективний при ПТСР, тривожних розладах і фобіях. Протипоказання: епілепсія, гострий психоз. Під час першої консультації проводиться діагностика.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+   </section>             
+                
     <!-- Motivational Section -->
     <section class="py-16 bg-white">
         <div class="container mx-auto px-4 text-center">
@@ -768,27 +811,31 @@
             }
         }
 
-function toggleFAQ(id) {
-    const faqItem = document.querySelectorAll('#faq .border')[id - 1];
-    if (!faqItem) return;
-
-    const answer = faqItem.querySelector('.faq-answer');
-    const icon = faqItem.querySelector('button i');
-
-    if (answer) {
-        answer.classList.toggle('hidden');
-    }
-    if (icon) {
-        icon.classList.toggle('rotate-180');
-    }
-}
-
-// Навешиваем обработчики на все кнопки FAQ после загрузки DOM
+<script>
 document.addEventListener('DOMContentLoaded', () => {
-    document.querySelectorAll('#faq button').forEach((btn, index) => {
-        btn.addEventListener('click', () => toggleFAQ(index + 1));
+  // Навешиваем обработчики на каждый FAQ-блок
+  document.querySelectorAll('#faq .border').forEach(faqItem => {
+    const btn = faqItem.querySelector('button');
+    const answer = faqItem.querySelector('.faq-answer');
+    const icon = btn ? btn.querySelector('i') : null;
+
+    if (!btn || !answer) return;
+
+    btn.addEventListener('click', () => {
+      const isOpen = !answer.classList.contains('hidden'); // true если сейчас открыт
+      // переключаем видимость контейнера ответа
+      answer.classList.toggle('hidden');
+      answer.setAttribute('aria-hidden', String(isOpen));
+
+      // обновляем aria на кнопке
+      btn.setAttribute('aria-expanded', String(!isOpen));
+
+      // вращаем иконку
+      if (icon) icon.classList.toggle('rotate-180');
     });
+  });
 });
+</script>
         
         // Модальное окно для сертификатов
         function openModal(src) {
