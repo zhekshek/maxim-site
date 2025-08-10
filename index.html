@@ -774,14 +774,15 @@
             }
         }
 
-// FAQ: обработка клика по кнопке вопроса
 function toggleFAQ(id) {
     const faqItem = document.querySelectorAll('#faq .border')[id - 1];
     if (!faqItem) return;
 
-    // Находим сам контейнер с ответом — предполагаем, что это второй div внутри faqItem
-    // (первый — кнопка, второй — блок с ответом)
-    const answer = faqItem.querySelector(':scope > div:nth-of-type(2)');
+    // Ищем среди прямых детей div с классом hidden (контейнер ответа)
+    const answer = Array.from(faqItem.children).find(
+      child => child.tagName === 'DIV' && child.classList.contains('hidden')
+    );
+
     const icon = faqItem.querySelector('button i');
 
     if (answer) {
