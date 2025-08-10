@@ -43,6 +43,14 @@
         .contact-button:hover {
             transform: translateY(-2px);
         }
+        body {
+    filter: grayscale(100%);
+    transition: filter 0.5s ease;
+}
+
+body.colorful {
+    filter: grayscale(0%);
+}
     </style>
 </head>
 <body class="font-sans">
@@ -830,5 +838,14 @@ function toggleFAQ(id) {
         // Инициализация языка
         changeLanguage('ru');
     </script>
+      <script>
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 10) {
+      document.body.classList.add('colorful');
+    } else {
+      document.body.classList.remove('colorful');
+    }
+  });
+      </script>          
 </body>
 </html>
