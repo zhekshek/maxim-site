@@ -779,7 +779,9 @@ function toggleFAQ(id) {
     const faqItem = document.querySelectorAll('#faq .border')[id - 1];
     if (!faqItem) return;
 
-    const answer = faqItem.querySelector('div.hidden');
+    // Находим сам контейнер с ответом — предполагаем, что это второй div внутри faqItem
+    // (первый — кнопка, второй — блок с ответом)
+    const answer = faqItem.querySelector(':scope > div:nth-of-type(2)');
     const icon = faqItem.querySelector('button i');
 
     if (answer) {
@@ -789,13 +791,6 @@ function toggleFAQ(id) {
         icon.classList.toggle('rotate-180');
     }
 }
-
-// Навешиваем обработчики на все кнопки FAQ после загрузки DOM
-document.addEventListener('DOMContentLoaded', () => {
-    document.querySelectorAll('#faq button').forEach((btn, index) => {
-        btn.addEventListener('click', () => toggleFAQ(index + 1));
-    });
-});
         
         // Модальное окно для сертификатов
         function openModal(src) {
