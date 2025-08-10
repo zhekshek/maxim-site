@@ -17,7 +17,9 @@
   }
 
   body.colorful {
-    filter: grayscale(0%);
+      filter: grayscale(100%);
+    transition: filter 0.5s ease;
+    margin: 0;
   }
 
   .section-block {
@@ -37,11 +39,17 @@
   .section-block:nth-child(even) {
     background-color: #f2fde8;
     color: #102d06;
+    filter: grayscale(100%);
+    transition: filter 0.5s ease;
+    margin: 0;
   }
 
   .nav-link {
     position: relative;
     color: #d3e4c7;
+    filter: grayscale(100%);
+    transition: filter 0.5s ease;
+    margin: 0;
   }
 
   .nav-link::after {
@@ -53,6 +61,7 @@
     left: 0;
     background-color: #6bb05c;
     transition: width 0.3s ease;
+    
   }
 
   .nav-link:hover::after {
