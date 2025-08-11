@@ -785,52 +785,58 @@ document.addEventListener("DOMContentLoaded", function() {
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-20 bg-gray-50">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-semibold text-center mb-12 text-gray-800" data-lang="ru">Связь со мной</h2>
-            <h2 class="text-3xl font-semibold text-center mb-12 text-gray-800 hidden" data-lang="en">Contact Me</h2>
-            <h2 class="text-3xl font-semibold text-center mb-12 text-gray-800 hidden" data-lang="ua">Зв'язок зі мною</h2>
+<section id="contact" class="py-20 bg-gray-50">
+    <div class="container mx-auto px-4">
+        <!-- Заголовки -->
+        <h2 class="text-3xl font-semibold text-center mb-12 text-gray-800" data-lang="ru">Связь со мной</h2>
+        <h2 class="text-3xl font-semibold text-center mb-12 text-gray-800 hidden" data-lang="en">Contact Me</h2>
+        <h2 class="text-3xl font-semibold text-center mb-12 text-gray-800 hidden" data-lang="ua">Зв'язок зі мною</h2>
 
-            <div class="max-w-md mx-auto bg-white p-8 rounded-xl shadow-sm">
-                <!-- Telegram -->
-                <a href="#" id="telegram-link" class="flex items-center p-4 mb-4 rounded-lg border border-gray-200 hover:border-blue-400 hover:bg-blue-50 transition group">
-                    <div class="bg-blue-100 p-3 rounded-full mr-4 group-hover:bg-blue-200 transition">
-                        <i class="fab fa-telegram text-blue-500 text-xl"></i>
-                    </div>
-                    <div>
-                        <h3 class="font-medium text-gray-800">Telegram</h3>
-                        <p class="text-sm text-gray-500" data-lang="ru">Написать сообщение</p>
-                        <p class="text-sm text-gray-500 hidden" data-lang="en">Send message</p>
-                        <p class="text-sm text-gray-500 hidden" data-lang="ua">Написати повідомлення</p>
-                    </div>
-                </a>
+        <!-- Контейнер с контактами -->
+        <div class="max-w-md mx-auto bg-white p-8 rounded-xl shadow-sm">
+            
+            <!-- Telegram -->
+            <a href="#" id="telegram-link" class="flex items-center p-4 mb-4 rounded-lg border border-gray-200 hover:border-blue-400 hover:bg-blue-50 transition group">
+                <div class="bg-blue-100 p-3 rounded-full mr-4 group-hover:bg-blue-200 transition">
+                    <i class="fab fa-telegram text-blue-500 text-xl"></i>
+                </div>
+                <div>
+                    <h3 class="font-medium text-gray-800">Telegram</h3>
+                    <p class="text-sm text-gray-500" data-lang="ru">Написать сообщение</p>
+                    <p class="text-sm text-gray-500 hidden" data-lang="en">Send message</p>
+                    <p class="text-sm text-gray-500 hidden" data-lang="ua">Написати повідомлення</p>
+                </div>
+            </a>
 
-                <!-- Instagram -->
-                <a href="#" id="instagram-link" class="flex items-center p-4 mb-4 rounded-lg border border-gray-200 hover:border-pink-400 hover:bg-pink-50 transition group">
-                    <div class="bg-pink-100 p-3 rounded-full mr-4 group-hover:bg-pink-200 transition">
-                        <i class="fab fa-instagram text-pink-500 text-xl"></i>
-                    </div>
-                    <div>
-                        <h3 class="font-medium text-gray-800">Instagram</h3>
-                        <p class="text-sm text-gray-500" data-lang="ru">Подписаться</p>
-                        <p class="text-sm text-gray-500 hidden" data-lang="en">Follow</p>
-                        <p class="text-sm text-gray-500 hidden" data-lang="ua">Підписатися</p>
-                    </div>
-                </a>
+            <!-- Instagram -->
+            <a href="#" id="instagram-link" class="flex items-center p-4 mb-4 rounded-lg border border-gray-200 hover:border-pink-400 hover:bg-pink-50 transition group">
+                <div class="bg-pink-100 p-3 rounded-full mr-4 group-hover:bg-pink-200 transition">
+                    <i class="fab fa-instagram text-pink-500 text-xl"></i>
+                </div>
+                <div>
+                    <h3 class="font-medium text-gray-800">Instagram</h3>
+                    <p class="text-sm text-gray-500" data-lang="ru">Подписаться</p>
+                    <p class="text-sm text-gray-500 hidden" data-lang="en">Follow</p>
+                    <p class="text-sm text-gray-500 hidden" data-lang="ua">Підписатися</p>
+                </div>
+            </a>
 
-                <!-- WhatsApp -->
-                <a href="#" id="whatsapp-link" class="flex items-center p-4 rounded-lg border border-gray-200 hover:border-green-400 hover:bg-green-50 transition group">
-                    <div class="bg-green-100 p-3 rounded-full mr-4 group-hover:bg-green-200 transition">
-                        <i class="fab fa-whatsapp text-green-500 text-xl"></i>
-                    </div>
-                    <div>
-                        <h3 class="font-medium text-gray-800">WhatsApp</h3>
-                        <p class="text-sm text-gray-500" data-lang="ru">Чат / звонок</p>
-                        <p class="text-sm text-gray-500 hidden" data-lang="en">Chat / call</p>
-                        <p class="text-sm text-gray-500 hidden" data-lang="ua">Чат / дзвінок</p>
-                    </div>
-                </a>
-            </div>
+            <!-- WhatsApp -->
+            <a href="#" id="whatsapp-link" class="flex items-center p-4 rounded-lg border border-gray-200 hover:border-green-400 hover:bg-green-50 transition group">
+                <div class="bg-green-100 p-3 rounded-full mr-4 group-hover:bg-green-200 transition">
+                    <i class="fab fa-whatsapp text-green-500 text-xl"></i>
+                </div>
+                <div>
+                    <h3 class="font-medium text-gray-800">WhatsApp</h3>
+                    <p class="text-sm text-gray-500" data-lang="ru">Чат / звонок</p>
+                    <p class="text-sm text-gray-500 hidden" data-lang="en">Chat / call</p>
+                    <p class="text-sm text-gray-500 hidden" data-lang="ua">Чат / дзвінок</p>
+                </div>
+            </a>
+
+        </div>
+    </div>
+</section>
 
             <!-- Дополнительный текст -->
             <div class="mt-12 text-center text-gray-600 max-w-2xl mx-auto">
