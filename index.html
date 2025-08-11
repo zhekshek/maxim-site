@@ -182,95 +182,132 @@ body.colorful {
     </section>
 
     <!-- Specializations Section -->
-    <section id="specializations" class="py-20 bg-gray-50">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-semibold text-center mb-12 text-gray-800" data-lang="ru">Чем я помогаю</h2>
-            <h2 class="text-3xl font-semibold text-center mb-12 text-gray-800 hidden" data-lang="en">What I Help With</h2>
-            <h2 class="text-3xl font-semibold text-center mb-12 text-gray-800 hidden" data-lang="ua">У чому я допомагаю</h2>
+    <!-- Tailwind и иконки -->
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Карточка 1: Тревога -->
-                <div class="bg-white p-6 rounded-lg border border-gray-200 hover:border-blue-300 transition hover:shadow-md">
-                    <div class="text-blue-500 text-2xl mb-3">
-                        <i class="fas fa-brain"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-3 text-gray-800" data-lang="ru">Тревога и паника</h3>
-                    <h3 class="text-xl font-semibold mb-3 text-gray-800 hidden" data-lang="en">Anxiety & Panic</h3>
-                    <h3 class="text-xl font-semibold mb-3 text-gray-800 hidden" data-lang="ua">Тривога та паніка</h3>
-                    <p class="text-gray-600" data-lang="ru">Преодоление тревоги и панических атак для обретения душевного спокойствия.</p>
-                    <p class="text-gray-600 hidden" data-lang="en">Overcoming anxiety and panic attacks to achieve mental peace.</p>
-                    <p class="text-gray-600 hidden" data-lang="ua">Подолання тривоги та панічних атак для відчуття спокою.</p>
-                </div>
-                
-                <!-- Карточка 2: Травма -->
-                <div class="bg-white p-6 rounded-lg border border-gray-200 hover:border-blue-300 transition hover:shadow-md">
-                    <div class="text-blue-500 text-2xl mb-3">
-                        <i class="fas fa-heartbeat"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-3 text-gray-800" data-lang="ru">Восстановление после травмы</h3>
-                    <h3 class="text-xl font-semibold mb-3 text-gray-800 hidden" data-lang="en">Trauma Recovery</h3>
-                    <h3 class="text-xl font-semibold mb-3 text-gray-800 hidden" data-lang="ua">Відновлення після травми</h3>
-                    <p class="text-gray-600" data-lang="ru">Переработка травматических переживаний для снижения их влияния на жизнь.</p>
-                    <p class="text-gray-600 hidden" data-lang="en">Processing traumatic experiences to reduce their life impact.</p>
-                    <p class="text-gray-600 hidden" data-lang="ua">Переробка травматичних переживань для зменшення впливу.</p>
-                </div>
-                
-                <!-- Карточка 3: Психосоматика -->
-                <div class="bg-white p-6 rounded-lg border border-gray-200 hover:border-blue-300 transition hover:shadow-md">
-                    <div class="text-blue-500 text-2xl mb-3">
-                        <i class="fas fa-heart"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-3 text-gray-800" data-lang="ru">Психосоматические симптомы</h3>
-                    <h3 class="text-xl font-semibold mb-3 text-gray-800 hidden" data-lang="en">Psychosomatic Symptoms</h3>
-                    <h3 class="text-xl font-semibold mb-3 text-gray-800 hidden" data-lang="ua">Психосоматичні симптоми</h3>
-                    <p class="text-gray-600" data-lang="ru">Устранение физических симптомов с психологическими корнями.</p>
-                    <p class="text-gray-600 hidden" data-lang="en">Addressing physical symptoms with psychological roots.</p>
-                    <p class="text-gray-600 hidden" data-lang="ua">Усунення фізичних симптомів з психологічним походженням.</p>
-                </div>
-                
-                <!-- Остальные карточки по аналогии -->
-                <!-- Карточка 4: Отношения -->
-                <div class="bg-white p-6 rounded-lg border border-gray-200 hover:border-blue-300 transition hover:shadow-md">
-                    <div class="text-blue-500 text-2xl mb-3">
-                        <i class="fas fa-people-arrows"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-3 text-gray-800" data-lang="ru">Проблемы в отношениях</h3>
-                    <h3 class="text-xl font-semibold mb-3 text-gray-800 hidden" data-lang="en">Relationship Issues</h3>
-                    <h3 class="text-xl font-semibold mb-3 text-gray-800 hidden" data-lang="ua">Проблеми у стосунках</h3>
-                    <p class="text-gray-600" data-lang="ru">Улучшение коммуникации и установление здоровых границ.</p>
-                    <p class="text-gray-600 hidden" data-lang="en">Improving communication and setting healthy boundaries.</p>
-                    <p class="text-gray-600 hidden" data-lang="ua">Покращення комунікації та встановлення меж.</p>
-                </div>
-                
-                <!-- Карточка 5: Выгорание -->
-                <div class="bg-white p-6 rounded-lg border border-gray-200 hover:border-blue-300 transition hover:shadow-md">
-                    <div class="text-blue-500 text-2xl mb-3">
-                        <i class="fas fa-burn"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-3 text-gray-800" data-lang="ru">Выгорание и стресс</h3>
-                    <h3 class="text-xl font-semibold mb-3 text-gray-800 hidden" data-lang="en">Burnout & Stress</h3>
-                    <h3 class="text-xl font-semibold mb-3 text-gray-800 hidden" data-lang="ua">Вигоряння та стрес</h3>
-                    <p class="text-gray-600" data-lang="ru">Восстановление ресурсов и разработка стратегий преодоления.</p>
-                    <p class="text-gray-600 hidden" data-lang="en">Recovery and development of coping strategies.</p>
-                    <p class="text-gray-600 hidden" data-lang="ua">Відновлення ресурсів та розробка стратегій подолання.</p>
-                </div>
-                
-                <!-- Карточка 6: Сон -->
-                <div class="bg-white p-6 rounded-lg border border-gray-200 hover:border-blue-300 transition hover:shadow-md">
-                    <div class="text-blue-500 text-2xl mb-3">
-                        <i class="fas fa-moon"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-3 text-gray-800" data-lang="ru">Расстройства сна</h3>
-                    <h3 class="text-xl font-semibold mb-3 text-gray-800 hidden" data-lang="en">Sleep Disorders</h3>
-                    <h3 class="text-xl font-semibold mb-3 text-gray-800 hidden" data-lang="ua">Розлади сну</h3>
-                    <p class="text-gray-600" data-lang="ru">Решение проблем бессонницы, связанных со стрессом.</p>
-                    <p class="text-gray-600 hidden" data-lang="en">Addressing stress-related insomnia.</p>
-                    <p class="text-gray-600 hidden" data-lang="ua">Подолання безсоння, пов'язаного зі стресом.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+<style>
+  /* Винтажная текстура */
+  #specializations {
+    background-image: url('https://www.transparenttextures.com/patterns/beige-paper.png');
+    background-size: auto;
+  }
 
+  /* Анимация появления карточек */
+  @keyframes fadeUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .fade-up {
+    animation: fadeUp 0.8s ease-out forwards;
+    opacity: 0;
+  }
+
+  /* Задержка для каждой карточки */
+  .fade-delay-1 { animation-delay: 0.1s; }
+  .fade-delay-2 { animation-delay: 0.2s; }
+  .fade-delay-3 { animation-delay: 0.3s; }
+  .fade-delay-4 { animation-delay: 0.4s; }
+  .fade-delay-5 { animation-delay: 0.5s; }
+  .fade-delay-6 { animation-delay: 0.6s; }
+</style>
+
+<section id="specializations" class="py-20 bg-amber-50">
+  <div class="container mx-auto px-4">
+
+    <!-- Заголовок -->
+    <h2 class="text-3xl font-serif font-semibold text-center mb-12 text-amber-900" data-lang="ru">Чем я помогаю</h2>
+    <h2 class="text-3xl font-serif font-semibold text-center mb-12 text-amber-900 hidden" data-lang="en">What I Help With</h2>
+    <h2 class="text-3xl font-serif font-semibold text-center mb-12 text-amber-900 hidden" data-lang="ua">У чому я допомагаю</h2>
+
+    <!-- Сетка карточек -->
+    <div class="grid md:grid-cols-3 gap-8">
+
+      <!-- Карточка 1 -->
+      <div class="bg-white p-6 rounded-lg border border-amber-200 shadow-md fade-up fade-delay-1">
+        <div class="text-amber-700 text-2xl mb-3"><i class="fas fa-heartbeat"></i></div>
+        <h3 class="text-xl font-serif font-semibold mb-3 text-amber-900" data-lang="ru">Тревожные расстройства</h3>
+        <h3 class="hidden" data-lang="en">Anxiety Disorders</h3>
+        <h3 class="hidden" data-lang="ua">Тривожні розлади</h3>
+        <p class="text-amber-700 font-serif" data-lang="ru">Снижение тревожности и панических атак с помощью EMDR и ImTT.</p>
+        <p class="hidden" data-lang="en">Reducing anxiety and panic attacks with EMDR and ImTT.</p>
+        <p class="hidden" data-lang="ua">Зниження тривожності та панічних атак за допомогою EMDR та ImTT.</p>
+      </div>
+
+      <!-- Карточка 2 -->
+      <div class="bg-white p-6 rounded-lg border border-amber-200 shadow-md fade-up fade-delay-2">
+        <div class="text-amber-700 text-2xl mb-3"><i class="fas fa-brain"></i></div>
+        <h3 class="text-xl font-serif font-semibold mb-3 text-amber-900" data-lang="ru">Посттравматическое стрессовое расстройство</h3>
+        <h3 class="hidden" data-lang="en">Post-Traumatic Stress Disorder</h3>
+        <h3 class="hidden" data-lang="ua">Посттравматичний стресовий розлад</h3>
+        <p class="text-amber-700 font-serif" data-lang="ru">Проработка травм и болезненных воспоминаний.</p>
+        <p class="hidden" data-lang="en">Processing trauma and painful memories.</p>
+        <p class="hidden" data-lang="ua">Опрацювання травм та болісних спогадів.</p>
+      </div>
+
+      <!-- Карточка 3 -->
+      <div class="bg-white p-6 rounded-lg border border-amber-200 shadow-md fade-up fade-delay-3">
+        <div class="text-amber-700 text-2xl mb-3"><i class="fas fa-cloud"></i></div>
+        <h3 class="text-xl font-serif font-semibold mb-3 text-amber-900" data-lang="ru">Депрессия</h3>
+        <h3 class="hidden" data-lang="en">Depression</h3>
+        <h3 class="hidden" data-lang="ua">Депресія</h3>
+        <p class="text-amber-700 font-serif" data-lang="ru">Восстановление мотивации и энергии к жизни.</p>
+        <p class="hidden" data-lang="en">Restoring motivation and energy for life.</p>
+        <p class="hidden" data-lang="ua">Відновлення мотивації та енергії до життя.</p>
+      </div>
+
+      <!-- Карточка 4 -->
+      <div class="bg-white p-6 rounded-lg border border-amber-200 shadow-md fade-up fade-delay-4">
+        <div class="text-amber-700 text-2xl mb-3"><i class="fas fa-people-arrows"></i></div>
+        <h3 class="text-xl font-serif font-semibold mb-3 text-amber-900" data-lang="ru">Проблемы в отношениях</h3>
+        <h3 class="hidden" data-lang="en">Relationship Issues</h3>
+        <h3 class="hidden" data-lang="ua">Проблеми у стосунках</h3>
+        <p class="text-amber-700 font-serif" data-lang="ru">Улучшение коммуникации и установление здоровых границ.</p>
+        <p class="hidden" data-lang="en">Improving communication and setting healthy boundaries.</p>
+        <p class="hidden" data-lang="ua">Покращення комунікації та встановлення меж.</p>
+      </div>
+
+      <!-- Карточка 5 -->
+      <div class="bg-white p-6 rounded-lg border border-amber-200 shadow-md fade-up fade-delay-5">
+        <div class="text-amber-700 text-2xl mb-3"><i class="fas fa-burn"></i></div>
+        <h3 class="text-xl font-serif font-semibold mb-3 text-amber-900" data-lang="ru">Выгорание и стресс</h3>
+        <h3 class="hidden" data-lang="en">Burnout & Stress</h3>
+        <h3 class="hidden" data-lang="ua">Вигоряння та стрес</h3>
+        <p class="text-amber-700 font-serif" data-lang="ru">Восстановление ресурсов и разработка стратегий преодоления.</p>
+        <p class="hidden" data-lang="en">Recovery and development of coping strategies.</p>
+        <p class="hidden" data-lang="ua">Відновлення ресурсів та розробка стратегій подолання.</p>
+      </div>
+
+      <!-- Карточка 6 -->
+      <div class="bg-white p-6 rounded-lg border border-amber-200 shadow-md fade-up fade-delay-6">
+        <div class="text-amber-700 text-2xl mb-3"><i class="fas fa-moon"></i></div>
+        <h3 class="text-xl font-serif font-semibold mb-3 text-amber-900" data-lang="ru">Расстройства сна</h3>
+        <h3 class="hidden" data-lang="en">Sleep Disorders</h3>
+        <h3 class="hidden" data-lang="ua">Розлади сну</h3>
+        <p class="text-amber-700 font-serif" data-lang="ru">Решение проблем бессонницы, связанных со стрессом.</p>
+        <p class="hidden" data-lang="en">Addressing stress-related insomnia.</p>
+        <p class="hidden" data-lang="ua">Подолання безсоння, пов'язаного зі стресом.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<script>
+  // Запускаем анимацию после загрузки страницы
+  document.addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll('.fade-up').forEach(el => {
+      el.style.opacity = "1";
+    });
+  });
+</script>
     <!-- Methods Section -->
     <section id="methods" class="py-20 bg-white">
         <div class="container mx-auto px-4">
