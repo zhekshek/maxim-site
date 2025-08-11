@@ -1,95 +1,59 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maksim Buchinskiy | Psychologist</title>
-
-    <!-- Tailwind с кастомными цветами -->
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              brandGreen: '#102d06',
-              brandLight: '#f2fde8',
-              brandAccent: '#d3e4c7',
-              brandLeaf: '#6bb05c'
-            },
-            fontFamily: {
-              sans: ['Inter', 'sans-serif']
-            }
-          }
-        }
-      }
-    </script>
     <script src="https://cdn.tailwindcss.com"></script>
-
-    <!-- Иконки -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-
-    <!-- Твои стили -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-      body {
-        font-family: 'Inter', sans-serif;
-        background-color: #f2fde8;
-        color: #d3e4c7;
-        filter: grayscale(100%);
-        transition: filter 0.5s ease;
-        margin: 0;
-      }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f9fafb;
+            color: #1f2937;
+        }
+        .nav-link {
+            position: relative;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -2px;
+            left: 0;
+            background-color: #3b82f6;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        .hero-section {
+            background: linear-gradient(rgba(249, 250, 251, 0.98), rgba(249, 250, 251, 0.98));
+        }
+        .faq-item {
+            transition: all 0.3s ease;
+        }
+        .faq-question:hover {
+            background-color: #f9fafb;
+        }
+        .contact-button {
+            transition: all 0.3s ease;
+        }
+        .contact-button:hover {
+            transform: translateY(-2px);
+        }
+        body {
+  filter: grayscale(100%);
+  transition: filter 0.5s ease;
+}
 
-      body.colorful {
-        filter: grayscale(0%);
-      }
-
-      .section-block {
-        background-clip: padding-box;
-        border-radius: 12px;
-        box-shadow: 0 6px 15px rgba(16, 45, 6, 0.15);
-        padding: 40px 30px;
-        margin-bottom: 40px;
-        position: relative;
-        transition: box-shadow 0.3s ease;
-      }
-
-      .section-block:hover {
-        box-shadow: 0 12px 30px rgba(16, 45, 6, 0.3);
-      }
-
-      .section-block:nth-child(even) {
-        background-color: #f2fde8;
-        color: #102d06;
-      }
-
-      .nav-link {
-        position: relative;
-        color: #d3e4c7;
-        filter: grayscale(100%);
-        transition: filter 0.5s ease;
-        margin: 0;
-      }
-
-      .icon-leaf {
-        font-size: 1.5rem;
-        color: #6bb05c;
-      }
-
-      .faq-question:hover {
-        background-color: #f2fde8;
-        color: #6bb05c;
-        cursor: pointer;
-      }
-
-      .contact-button {
-        transition: all 0.3s ease;
-      }
-
-      .contact-button:hover {
-        transform: translateY(-2px);
-      }
+body.colorful {
+  filter: grayscale(0%);
+}
     </style>
 </head>
+<body class="font-sans">
     <!-- Header -->
     <header class="fixed w-full bg-white bg-opacity-90 shadow-sm z-50">
         <div class="container mx-auto px-4 py-4 flex justify-between items-center">
@@ -883,6 +847,15 @@ function toggleFAQ(id) {
       document.body.classList.remove('colorful');
     }
   });
-      </script>          
+      </script>     
+<script>
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 10) {
+      document.body.classList.add('colorful');
+    } else {
+      document.body.classList.remove('colorful');
+    }
+  });
+</script>                
 </body>
 </html>
