@@ -4,96 +4,92 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Maksim Buchinskiy | Psychologist</title>
+
+    <!-- Tailwind с кастомными цветами -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brandGreen: '#102d06',
+              brandLight: '#f2fde8',
+              brandAccent: '#d3e4c7',
+              brandLeaf: '#6bb05c'
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif']
+            }
+          }
+        }
+      }
+    </script>
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Иконки -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <!-- Твои стили -->
     <style>
-  body {
-    font-family: 'Inter', sans-serif;
-    background-color: #f2fde8;
-    color: #d3e4c7;
-    filter: grayscale(100%);
-    transition: filter 0.5s ease;
-    margin: 0;
-  }
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: #f2fde8;
+        color: #d3e4c7;
+        filter: grayscale(100%);
+        transition: filter 0.5s ease;
+        margin: 0;
+      }
 
-  body.colorful {
-      filter: grayscale(0%);
-  }
+      body.colorful {
+        filter: grayscale(0%);
+      }
 
-  .section-block {
-    background-clip: padding-box;
-    border-radius: 12px;
-    box-shadow: 0 6px 15px rgba(16, 45, 6, 0.15);
-    padding: 40px 30px;
-    margin-bottom: 40px;
-    position: relative;
-    transition: box-shadow 0.3s ease;
-  }
+      .section-block {
+        background-clip: padding-box;
+        border-radius: 12px;
+        box-shadow: 0 6px 15px rgba(16, 45, 6, 0.15);
+        padding: 40px 30px;
+        margin-bottom: 40px;
+        position: relative;
+        transition: box-shadow 0.3s ease;
+      }
 
-  .section-block:hover {
-    box-shadow: 0 12px 30px rgba(16, 45, 6, 0.3);
-  }
+      .section-block:hover {
+        box-shadow: 0 12px 30px rgba(16, 45, 6, 0.3);
+      }
 
-  .section-block:nth-child(even) {
-    background-color: #f2fde8;
-    color: #102d06;
+      .section-block:nth-child(even) {
+        background-color: #f2fde8;
+        color: #102d06;
+      }
 
-  }
+      .nav-link {
+        position: relative;
+        color: #d3e4c7;
+        filter: grayscale(100%);
+        transition: filter 0.5s ease;
+        margin: 0;
+      }
 
-  .nav-link {
-    position: relative;
-    color: #d3e4c7;
-    filter: grayscale(100%);
-    transition: filter 0.5s ease;
-    margin: 0;
-  }
+      .icon-leaf {
+        font-size: 1.5rem;
+        color: #6bb05c;
+      }
 
-  .nav-link::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    bottom: -2px;
-    left: 0;
-    background-color: #6bb05c;
-    transition: width 0.3s ease;
-    
-  }
+      .faq-question:hover {
+        background-color: #f2fde8;
+        color: #6bb05c;
+        cursor: pointer;
+      }
 
-  .nav-link:hover::after {
-    width: 100%;
-  }
+      .contact-button {
+        transition: all 0.3s ease;
+      }
 
-  .section-title {
-    font-size: 2rem;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 24px;
-    font-weight: 600;
-  }
-
-  .icon-leaf {
-    font-size: 1.5rem;
-    color: #6bb05c;
-  }
-
-  .faq-question:hover {
-    background-color: #f2fde8;
-    color:#6bb05c;
-    cursor: pointer;
-  }
-
-  .contact-button {
-    transition: all 0.3s ease;
-  }
-
-  .contact-button:hover {
-    transform: translateY(-2px);
-  }
+      .contact-button:hover {
+        transform: translateY(-2px);
+      }
     </style>
-</head>  
-<body class="font-sans"> 
+</head>
     <!-- Header -->
     <header class="fixed w-full bg-white bg-opacity-90 shadow-sm z-50">
         <div class="container mx-auto px-4 py-4 flex justify-between items-center">
