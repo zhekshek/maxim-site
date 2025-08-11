@@ -92,30 +92,47 @@ body.colorful {
     </header>
 
     <!-- Hero Section -->
-    <section class="hero-section pt-32 pb-20">
-        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center gap-12">
-            <div class="md:w-1/2">
-                <img src="https://i.postimg.cc/y6nCPQQH/DSCF7403.jpg" 
-                     alt="Maksim Buchinskiy" 
-                     class="rounded-lg shadow-lg w-full max-w-md border border-gray-200">
-            </div>
-            <div class="md:w-1/2 text-center md:text-left">
-                <h1 class="text-3xl md:text-4xl font-semibold mb-6 text-gray-800" data-lang="ru">Терапия травм и тревожных расстройств</h1>
-                <h1 class="text-3xl md:text-4xl font-semibold mb-6 text-gray-800 hidden" data-lang="en">Trauma and Anxiety Therapy</h1>
-                <h1 class="text-3xl md:text-4xl font-semibold mb-6 text-gray-800 hidden" data-lang="ua">Терапія травм та тривожних розладів</h1>
-                
-                <p class="text-lg mb-8 text-gray-600" data-lang="ru">Использую EMDR и ImTT для помощи клиентам с тревогой, травмами и выгоранием.</p>
-                <p class="text-lg mb-8 text-gray-600 hidden" data-lang="en">Using EMDR and ImTT to help clients with anxiety, trauma, and burnout.</p>
-                <p class="text-lg mb-8 text-gray-600 hidden" data-lang="ua">Використовую EMDR та ImTT для допомоги з тривогою, травмою та вигоранням.</p>
-                
-                <a href="#contact" class="bg-blue-500 hover:bg-blue-600 text-white px-8 py-3 rounded-lg text-lg transition shadow-md inline-block">
-                    <span data-lang="ru">Записаться на консультацию</span>
-                    <span class="hidden" data-lang="en">Book a consultation</span>
-                    <span class="hidden" data-lang="ua">Записатися на консультацію</span>
-                </a>
-            </div>
-        </div>
-    </section>
+    <style>
+  /* Винтажная текстура с transparenttextures.com */
+  .vintage-bg {
+    background-image: url('https://www.transparenttextures.com/patterns/old-mathematics.png');
+    background-repeat: repeat;
+    background-color: #f7f1e1; /* тёплый светлый фон */
+  }
+
+  /* Анимация увеличения для кнопки */
+  .btn-scale-up {
+    transition: transform 0.3s ease;
+  }
+  .btn-scale-up:hover {
+    transform: scale(1.05);
+  }
+</style>
+
+<section class="hero-section vintage-bg pt-32 pb-20">
+  <div class="container mx-auto px-4 flex flex-col md:flex-row items-center gap-12">
+    <div class="md:w-1/2">
+      <img src="https://i.postimg.cc/y6nCPQQH/DSCF7403.jpg" 
+           alt="Maksim Buchinskiy" 
+           class="rounded-lg shadow-lg w-full max-w-md border border-gray-300">
+    </div>
+    <div class="md:w-1/2 text-center md:text-left">
+      <h1 class="text-3xl md:text-4xl font-serif font-semibold mb-6 text-amber-900" data-lang="ru">Терапия травм и тревожных расстройств</h1>
+      <h1 class="text-3xl md:text-4xl font-serif font-semibold mb-6 text-amber-900 hidden" data-lang="en">Trauma and Anxiety Therapy</h1>
+      <h1 class="text-3xl md:text-4xl font-serif font-semibold mb-6 text-amber-900 hidden" data-lang="ua">Терапія травм та тривожних розладів</h1>
+      
+      <p class="text-lg mb-8 text-amber-700 font-serif" data-lang="ru">Использую EMDR и ImTT для помощи клиентам с тревогой, травмами и выгоранием.</p>
+      <p class="text-lg mb-8 text-amber-700 font-serif hidden" data-lang="en">Using EMDR and ImTT to help clients with anxiety, trauma, and burnout.</p>
+      <p class="text-lg mb-8 text-amber-700 font-serif hidden" data-lang="ua">Використовую EMDR та ImTT для допомоги з тривогою, травмою та вигоранням.</p>
+      
+      <a href="#contact" class="bg-amber-600 hover:bg-amber-700 text-white px-8 py-3 rounded-lg text-lg shadow-md inline-block btn-scale-up">
+        <span data-lang="ru">Записаться на консультацию</span>
+        <span class="hidden" data-lang="en">Book a consultation</span>
+        <span class="hidden" data-lang="ua">Записатися на консультацію</span>
+      </a>
+    </div>
+  </div>
+</section>
 
     <!-- About Section -->
     <section id="about" class="py-20 bg-white">
