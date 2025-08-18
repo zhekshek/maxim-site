@@ -43,11 +43,11 @@
         .contact-button:hover {
             transform: translateY(-2px);
         }
-        .grayscale {
+       .section-gray {
   filter: grayscale(100%);
   transition: filter 0.8s ease;
 }
-.colorful {
+.section-color {
   filter: grayscale(0%);
 }
     </style>
@@ -137,7 +137,7 @@ I work in EMDR and ImTT modern methods.</p>
 </section>
 
     <!-- About Section -->
-    <section id="about" class="py-20 bg-white">
+    <section id="about" class="section-gray">    <!-- py-20 bg-white -->
         <div class="container mx-auto px-4 flex flex-col md:flex-row items-center gap-12">
             <div class="md:w-1/3">
                 <img src="https://i.postimg.cc/tJnDrQR5/DSCF7207.jpg" 
@@ -978,19 +978,17 @@ function toggleFAQ(id) {
     }
   });
       </script>     
-                
-<script>
-  const section = document.querySelector('about'); // наша секция
+                <script>
+  const section = document.querySelector('#about');
 
   window.addEventListener('scroll', () => {
     const rect = section.getBoundingClientRect();
     const windowHeight = window.innerHeight;
 
-    // если хотя бы половина секции в зоне видимости
     if (rect.top < windowHeight / 2 && rect.bottom > windowHeight / 2) {
-      section.classList.add('colorful'); // включаем цвет
+      section.classList.add('section-color');
     }
   });
-</script>                
+</script>               
 </body>
 </html>
