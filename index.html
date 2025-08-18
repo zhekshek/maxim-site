@@ -47,7 +47,6 @@
   filter: grayscale(100%);
   transition: filter 0.5s ease;
 }
-
 body.colorful {
   filter: grayscale(0%);
 }
@@ -985,6 +984,19 @@ function toggleFAQ(id) {
       document.body.classList.add('colorful');
     } else {
       document.body.classList.remove('colorful');
+    }
+  });
+</script>
+<script>
+  const section = document.querySelector('#about'); // наша секция
+
+  window.addEventListener('scroll', () => {
+    const rect = section.getBoundingClientRect();
+    const windowHeight = window.innerHeight;
+
+    // если хотя бы половина секции в зоне видимости
+    if (rect.top < windowHeight / 2 && rect.bottom > windowHeight / 2) {
+      section.classList.add('colorful'); // включаем цвет
     }
   });
 </script>                
